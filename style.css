@@ -1,0 +1,420 @@
+
+/*HEADER Y BARRA DE NAVEGACIÓN*/
+
+header{
+  width: 100%; /*Ancho*/
+  height: 100px; /*alto*/
+  background-color:  rgb(149, 13, 13);}
+
+header nav{
+  padding: 3rem;
+  display: flex;
+  justify-content: center; 
+
+}
+
+header nav .nav-right-section{
+  width: 250px;
+  height: 100%;
+  display: flex;
+  list-style: none; /*Para eliminar los puntitos*/
+  justify-content: center;
+  align-items: center;
+}
+
+nav .nav-right-section .integrantes1{
+ 
+  font-size: 20px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+ 
+}
+
+nav .nav-right-section .albumnes1{
+ 
+ 
+  font-size: 20px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+ 
+}
+
+nav .nav-right-section .historia{
+ 
+ 
+  font-size: 20px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+ 
+}
+
+nav .nav-right-section .inspiraciones{
+ 
+ 
+  font-size: 20px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+ 
+}
+nav .nav-right-section .actualidad{
+ 
+ 
+  font-size: 20px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+a{
+  text-decoration: none;
+  cursor: pointer;
+}
+nav .nav-right-section a{
+  margin-right: 25px;
+  color: rgb(21,21, 21);
+}
+
+section{
+  background-color:  rgb(149, 13, 13);
+}
+
+
+
+/*PORTADA*/
+
+
+.typewriter h1 {
+  color: #000000;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  overflow: hidden; /* Para asegurarnos que el contenido no se revele antes de la animación*/
+  border-right: .12em solid rgb(1, 1, 1); /* Color del typewriter  y ancho*/
+  white-space: nowrap; /* se mantiene en la misma linea */
+  margin: 0 auto; 
+  letter-spacing: .15em; /* espacio entre las letras */
+  animation: 
+    typing 2s steps(400, end), /*Velocidad con la que se escribe pasos en los que se escribe*/
+    blink-caret .2s step-end infinite; /*velocidad del parpadeo del cursor */
+}
+
+/* Efecto */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* Efecto del cursor */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color:transparent }
+} /*Eliminar el cursor si no se quiere eliminar se cambia el color*/
+
+ .typewriter h1{
+  font-size: 8rem;
+ } /*tamaño del texto animado*/
+
+
+
+ img .portada{
+  width: 250px;
+} /*tamaño de la portada*/
+
+img.portada:hover {
+  /*Animación de vibrar */
+  animation: vibrate 0.5s;
+
+  /* la vibración se mantiene */
+  animation-iteration-count: infinite;
+}
+@keyframes vibrate {
+  0% { transform: rotate(0deg); }
+  10% { transform: rotate(-1deg); }
+  20% { transform: rotate(1deg); }
+  30% { transform: rotate(0deg); }
+  40% { transform: rotate(1deg); }
+  50% { transform: rotate(-1deg); }
+  60% { transform: rotate(0deg); }
+  70% { transform: rotate(-1deg); }
+  80% { transform: rotate(1deg); }
+  90% { transform: rotate(0deg); }
+  100% { transform: rotate(-1deg); }
+} /*programación del efecto*/
+
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
+h1 {
+  font-size: 180px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color:black;
+
+}  /*Color y tamaño del texto animado*/
+
+
+.seccion-titulo {
+  font-size: 3rem;
+  padding: 80px 0;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+} /*color y tamaño de los títulos de las cdescripciones*/
+
+.seccion-descripcion {
+  font-size: 1.5rem;
+  color:white;
+} /*color y tamaño del texto que desceibe las secciones*/
+
+.seccion-texto {
+  font-size: 1.2rem;
+}
+
+
+
+
+/* Integrantes */
+
+
+.integrantes {
+  padding: 40px 40px 80px 40px;
+}
+
+.integrantes .carousel {
+  max-width: 800px;
+}
+
+.carousel-item {
+  height: 500px;
+}
+
+.carousel-item .container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+.integrante-info {
+  font-weight: bold;
+  text-align: center;
+}
+
+.integrante-info p {
+  margin-bottom: 0;
+}
+
+.integrante-footer .nombre {
+  font-size: 5rem;
+}
+
+.integrante-info .instrumento {
+  font-size: 1rem;
+  color:white;
+}
+
+/* Albunmnes  */
+
+.albumnes {
+  padding: 40px 40px 80px 40px;
+}
+
+.albumnes .carousel {
+  max-width: 1500px; /*separación de las flechas para cambiar */
+  
+}
+
+.carousel-item {
+  height: 500px; /*Tamaño del item del carrusel*/
+}
+
+.carousel-item .container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.album-info {
+  font-weight: bold;
+  text-align: center;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+
+
+.album-footer .nombre {
+  font-size: 4rem;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.album-info .año {
+  font-size: 1rem;
+  color: white;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+
+/* lista de mejores canciones*/
+section li{
+  font-size: 35px;
+  color: white;
+
+}
+ 
+
+
+  /*formulario radio*/
+  /* The container */
+.container2 {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default radio button */
+.container2 input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Create a custom radio button */
+.checkmark2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+  border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.container2:hover input ~ .checkmark2 {
+  background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+.container2 input:checked~ .checkmark2 {
+  background-color: black;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark2:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.container2 input:checked ~ .checkmark2:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.container2 .checkmark2:after {
+ 	top: 9px;
+	left: 9px;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /*Formulario checkbox*/
+  /* El contenedor */
+.container {
+  display: grid; 
+  position: relative;
+  padding-left: 40px; /*Espacio entre el box y el texto*/
+  margin-bottom: 15px; /*Espacio entre las opciones*/
+  cursor: pointer;
+  font-size: 25px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Oculta el default del checkbox */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color:whitesmoke; /*cambia el color del cuadro*/
+}
+
+/*Cambia el color cuando se acerca el mouse*/
+.container:hover input ~ .checkmark {
+  background-color: rgb(41, 39, 39);
+}
+
+/* WCambia el color cuando se ha selecionado la celda*/
+.container input:checked ~ .checkmark {
+  background-color: black;
+}
+
+/* Ccrea el indicar de seleccionado (oculto cuando no se ha selecionado nada)*/
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/*Muestra cuando se ha selccionado una casilla*/
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* estilo de la palomita de selcción  */
+.container .checkmark:after {
+  left: 9px; /*posicion a la izquiera del box*/
+  top: 7px; /*posicion a la parte superior del box*/
+  width: 8px; /*ancho*/
+  height: 12px;/*largo*/
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+
+
+
+
